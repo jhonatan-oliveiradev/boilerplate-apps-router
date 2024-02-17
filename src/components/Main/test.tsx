@@ -16,4 +16,14 @@ describe('<Main />', () => {
     // snapshot
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  it('should render the colors correctly', () => {
+    // render the component
+    const { container } = render(<Main />)
+
+    // verify if the background color is correct
+    expect(container.firstChild).toHaveStyle({
+      'background-color': '#06092b'
+    })
+  })
 })
