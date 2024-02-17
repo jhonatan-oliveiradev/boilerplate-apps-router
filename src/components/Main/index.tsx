@@ -1,8 +1,10 @@
+import * as S from './styles'
+
 const Main = () => {
   return (
-    <main>
-      <h1>hello world</h1>
-    </main>
+    <S.Wrapper>
+      <h1>React Avançado</h1>
+    </S.Wrapper>
   )
 }
 
